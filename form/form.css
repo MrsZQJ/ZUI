@@ -1,0 +1,31 @@
+/* 表单容器样式 */
+.z-form-item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.z-form-label{
+    width: 80px;
+    padding: 9px 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+.z-form-block{
+    flex: 1;
+    min-height: 36px;
+}
+.z-form-ipt{
+    min-height: 36px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    text-indent: 1em;
+    font-size: 15px;
+}
+.z-form-ipt:hover{
+    border-color: #d2d2d2;
+    /* visibility: ; */
+}

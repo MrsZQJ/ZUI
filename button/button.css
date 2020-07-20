@@ -1,0 +1,119 @@
+/* button按钮基础样式 */
+.z-btn {
+    text-align: center;
+    background-color: #ffffff;
+    border: solid #555555 1px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    line-height: 38px;
+    color: #555555;
+    font-size: 14px;
+    outline: none;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+}
+
+.z-btn:hover {
+    border: 1px solid #009688;
+    opacity: 0.8;
+    transition: .5s;
+}
+
+/**
+    按钮样式
+**/
+/* 默认button */
+.z-btn-defult {
+    background-color: #009688;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
+.z-btn-defult:hover {
+    border: #ffffff 1px solid;
+}
+
+/* 警告button */
+.z-btn-danger {
+    background-color: #FF5722;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
+.z-btn-danger:hover {
+    border: #ffffff 1px solid;
+}
+
+/* 蓝色按钮 */
+.z-btn-normal {
+    background-color: #1E9FFF;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
+.z-btn-normal:hover {
+    border: #ffffff 1px solid;
+}
+
+/* 暖色按钮 */
+.z-btn-warm {
+    background-color: #FFB800;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
+.z-btn-warm:hover {
+    border: #ffffff 1px solid;
+}
+
+/* 禁用按钮 */
+.z-btn-disabled {
+    color: #c9c9c9;
+    border: #e6e6e6 1px solid;
+}
+
+.z-btn-disabled:hover {
+    border: #e6e6e6 1px solid;
+    opacity: 1;
+    transition: 0s;
+    cursor: not-allowed;
+}
+
+/**
+    按钮大小
+**/
+/* 大按钮 */
+.z-btn-lg {
+    padding: 0 25px;
+    line-height: 44px;
+}
+
+/* 小按钮 */
+.z-btn-sm {
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+/* 迷你按钮 */
+.z-btn-xs {
+    padding: 0 5px;
+    line-height: 22px;
+}
+
+/* 弹性按钮 */
+.z-btn-flex{
+    width: 100%;
+}
+
+/* 圆角按钮 */
+.z-btn-radio{
+    border-radius: 100px;
+}
+
+/* 按钮组 */
+.z-btn-group{
+    font-size: 0;
+    vertical-align: middle;
+    display: inline-block;
+}

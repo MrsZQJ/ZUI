@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./zDate.css">
+</head>
+<body style="z-index: 2;">
+    <h4>表单集合</h4>
+    <div class="z-form-item">
+        <label class="z-form-label">单行输入框</label>
+        <div class="z-form-block">
+            <input class="z-form-ipt" type="text" placeholder="请输入内容">
+            
+        </div>
+    </div>
+    <div class="z-form-item" style="width: 300px;">
+        <label class="z-form-label">选择日期</label>
+        <div class="z-form-block">
+            <input class="z-form-ipt tim" type="text" placeholder="请输入内容">
+        </div>
+    </div>
+</body>
+<script src="../jquery.js"></script>
+<script src="./form.js"></script>
+<script src="./zDate.js"></script>
+<script>
+    $('.tim').showTimeSelect({
+        type: 'datetime'
+    })
+</script>
+</html>
