@@ -1,23 +1,26 @@
 /* 表单容器样式 */
-.z-form-item{
+.z-form-item {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     margin: 5px;
 }
-.z-form-label{
+
+.z-form-label {
     width: 80px;
     padding: 9px 15px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
 }
-.z-form-block{
+
+.z-form-block {
     flex: 1;
     min-height: 36px;
 }
-.z-form-ipt{
+
+.z-form-ipt {
     min-height: 36px;
     width: 100%;
     border: 1px solid #e6e6e6;
@@ -25,7 +28,71 @@
     text-indent: 1em;
     font-size: 15px;
 }
-.z-form-ipt:hover{
+
+.z-form-ipt:hover {
     border-color: #d2d2d2;
     /* visibility: ; */
+}
+
+
+/* 开关  */
+.z-circuit-block {
+    position: relative;
+    height: 22px;
+    line-height: 20px;
+    min-width: 35px;
+    padding: 0 5px;
+    margin-top: 8px;
+    border: 1px solid #5FB878;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .1s linear;
+    display: inline-block;
+    background-color: #5FB878;
+    vertical-align: middle;
+}
+
+.z-circuit-block>em {
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 22px;
+    padding: 0;
+    color: #ffffff;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.z-circuit-block>i {
+    position: absolute;
+    /* left: 5px; */
+    right: 5px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.z-circuit-block-nosel {
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+}
+
+.z-circuit-block-nosel>em {
+    color: #999;
+    margin-left: 22px;
+    margin-right: 5px;
+}
+
+.z-circuit-block-nosel>i {
+    left: 5px;
+    background-color: #d2d2d2;
 }

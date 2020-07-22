@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="./zDate.css">
 </head>
+
 <body style="z-index: 2;">
     <h4>表单集合</h4>
     <div class="z-form-item">
         <label class="z-form-label">单行输入框</label>
         <div class="z-form-block">
             <input class="z-form-ipt" type="text" placeholder="请输入内容">
-            
+
         </div>
     </div>
     <div class="z-form-item" style="width: 300px;">
@@ -22,13 +24,38 @@
             <input class="z-form-ipt tim" type="text" placeholder="请输入内容">
         </div>
     </div>
+    <div class="z-form-item">
+        <label class="z-form-label">开关</label>
+        <div class="z-form-block">
+            <input type="checkbox" z-text='OFF|ON' checked class="z-input-beautiful">
+        </div>
+    </div>
+    <div class="z-form-item">
+        <label class="z-form-label">开关</label>
+        <div class="z-form-block">
+            <input type="checkbox" z-text='吃饭|睡觉' class="z-input-beautiful">
+        </div>
+    </div>
+    <div class="z-form-item">
+        <label class="z-form-label">开关</label>
+        <div class="z-form-block">
+            <input type="checkbox" z-text='一起去吃饭|一起去睡觉' class="z-input-beautiful">
+        </div>
+    </div>
 </body>
 <script src="../jquery.js"></script>
+<!-- <script src="./form.js"></script> -->
+<!-- <script src="./zDate.js"></script> -->
 <script src="./form.js"></script>
-<script src="./zDate.js"></script>
 <script>
-    $('.tim').showTimeSelect({
-        type: 'datetime'
+    // $('.tim').showTimeSelect({
+    //     type: 'datetime'
+    // })
+    ZUI.showTimeSelect({
+        type: 'datetime',
+        selector: '.tim'
     })
+    ZUI.circuit()
 </script>
+
 </html>

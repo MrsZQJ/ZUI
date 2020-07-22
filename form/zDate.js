@@ -15,6 +15,7 @@
         tt
 
     function TimeLoad(type, that) {
+        // console.log(type, that);
         tt = this
         this.type = type
         this.time_arr = this.formatTime(new Date(), type)

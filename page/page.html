@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <link rel="stylesheet" href="./page.css">
+</head>
+
+<body>
+    <div class="a">
+        <!-- <div class="zui-page">
+            <a href="javascript:;" class="zui-page-noallow" data-page="4">上一页</a>
+            <a href="javascript:;" data-page="1" title="首页">1</a>
+            <a class="zui-page-spr">…</a>
+            <a href="javascript:;" data-page="3">3</a>
+            <a href="javascript:;" data-page="4">4</a>
+            <a class="zui-page-curr">5</a>
+            <a href="javascript:;" data-page="6">6</a>
+            <a href="javascript:;" data-page="7">7</a>
+            <a href="javascript:;" data-page="6">下一页</a>
+        </div> -->
+    </div>
+</body>
+<script src="../jquery.js"></script>
+<script src="./page.js"></script>
+<script>
+    ZUI.paging({
+        prev_next_text : '上一页|下一页',
+        count: 40,
+        selector: '.a',
+        current: 38,
+        callBack: function(page) {
+            console.log(page);
+        }
+    })
+</script>
+</html>
