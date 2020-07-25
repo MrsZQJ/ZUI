@@ -1,13 +1,13 @@
 # 前端UI框架    
 
-##### 时间选择器---[效果](form/form.html)
+##### 时间选择器---[效果](https://mrszqj.github.io/ZUI/form/form.html)
 
 | 参数名    | 参数值            |
 | --------- | ----------------- |
 | selector* | 选择器---id,class |
 | type*     | datetime          |
 
-##### page分[效果](page/page.html)
+##### page分[效果](https://mrszqj.github.io/ZUI/page/page.html)
 
 | 参数名         | 参数值                                        |
 | -------------- | --------------------------------------------- |
@@ -18,13 +18,13 @@
 | page_len       | 生成的分页个数                                |
 | callBack       | 切换分页的回调函数,返回要切换的页面排序数     |
 
-##### 开关 [效果](form/form.html)
+##### 开关 [效果](https://mrszqj.github.io/ZUI/form/form.html)
 
 | 参数名    | 参数值            |
 | --------- | ----------------- |
 | selector* | 选择器---id,class |
 
-滑块 [效果](silder/silder.html)
+滑块 [效果](https://mrszqj.github.io/ZUI/silder/silder.html)
 
 | 参数名          | 参数值                          |
 | --------------- | ------------------------------- |
