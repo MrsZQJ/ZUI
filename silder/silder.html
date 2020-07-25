@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>silder</title>
+    <link rel="stylesheet" href="./silder.css">
+    <style>
+        .a {
+            width: 500px;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="a">
+        <!-- <div class="zui-slider ">
+            <div class="zui-slider-tips" style="left: 48%; display: none;">48</div>
+            <div class="zui-slider-bar" style="background: rgb(0, 150, 136); width: 48%; left: 0%;"></div>
+            <div class="zui-slider-wrap" style="left: 48%;">
+                <div class="zui-slider-wrap-btn" style="border: 2px solid #009688;"></div>
+            </div>
+        </div> -->
+    </div>
 </body>
 <script src="../jquery.js"></script>
-<script src="../ZUI.js"></script>
+<script src="./silder.js"></script>
 <script>
-    
+    ZUI.silder({
+        elem: '.a',
+        color: '#1E9FFF',
+        pos: '25%',
+        showNum: true,
+        count: 50,
+        disable: false,
+        callBackMove: function (num) {
+            // console.log('move', num);
+        },
+        callBackMouseup: function (num) {
+            // console.log('up', num);
+        }
+    })
 </script>
+
 </html>

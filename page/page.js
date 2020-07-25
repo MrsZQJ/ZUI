@@ -96,11 +96,24 @@
         xx.elem.on('click', 'a', function (e) {
             var page = $(this).attr('data-page')
             if (page != 'curr' && page != 'mid') {
-                xx.callBack(page)
-                xx.current = page
-                xx.elem.find('.zui-page').html(xx.createTemplate())
+                if (page == 'prev') {
+                    if (!$(this).attr('class')) {
+                        xx.current--
+                        xx.callBack(xx.current)
+                        xx.elem.find('.zui-page').html(xx.createTemplate())
+                    } else if ($(this).attr('class').indexOf('zui-page-noallow') != -1) return
+                } else if (page == 'next') {
+                    if (!$(this).attr('class')) {
+                        xx.current++
+                        xx.callBack(xx.current)
+                        xx.elem.find('.zui-page').html(xx.createTemplate())
+                    } else if ($(this).attr('class').indexOf('zui-page-noallow') != -1) return
+                } else {
+                    xx.callBack(page)
+                    xx.current = page
+                    xx.elem.find('.zui-page').html(xx.createTemplate())
+                }
             }
         })
     }
-
 })(window)
