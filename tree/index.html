@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tree</title>
+    <link rel="stylesheet" href="./iconfont.css">
+    <link rel="stylesheet" href="./tree.css">
+</head>
+
+<body>
+    <div id="test2"></div>
+</body>
+<script src="../jquery.js"></script>
+<script src="../ZUI.js"></script>
+<script>
+    var data
+    $.ajax({
+        type: "get",
+        url: "./tree.json",
+        dataType: "json",
+        async: false,
+        success: function (response) {
+            data = response
+        }
+    });
+
+    ZUI.tree({
+        data: data,
+        title: 'title',
+        id: 'id',
+        elem: '#test2',
+        children: 'children',
+        iconfont: 'iconfont|icon-add_circle|icon-iconset0187|icon-file',
+        callBack: function (con) {
+            console.log(con);
+        }
+    })
+</script>
+
+</html>
