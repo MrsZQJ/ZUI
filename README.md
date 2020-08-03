@@ -24,7 +24,7 @@
 | --------- | ----------------- |
 | selector* | 选择器---id,class |
 
-滑块 [效果](https://mrszqj.github.io/ZUI/silder/silder.html)
+##### 滑块 [效果](https://mrszqj.github.io/ZUI/silder/silder.html)
 
 | 参数名          | 参数值                          |
 | --------------- | ------------------------------- |
@@ -36,4 +36,16 @@
 | elem            | 选择器---id,cass                |
 | callBackMove    | 移动滑块时的回调函数,返回当前值 |
 | callBackMouseup | 鼠标松开后的回调,返回当前值     |
+
+##### 树形组件 [效果](https://mrszqj.github.io/ZUI/tree/tree.html)
+
+| 参数名   | 参数值                                       |
+| -------- | -------------------------------------------- |
+| data     | 数据                                         |
+| title    | 渲染生成元素显示的标题内容,填写数据的title名 |
+| id       | 渲染生成元素显示的id序列,填写数据的title名   |
+| elem     | 选择器---id,cass                             |
+| children | 数据子节点对象名                             |
+| iconfont | 字体图标css类名                              |
+| callBack | 回调函数                                     |
 

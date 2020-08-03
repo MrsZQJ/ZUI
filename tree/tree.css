@@ -1,0 +1,56 @@
+.zui-tree {
+    line-height: 22px;
+}
+
+.zui-tree-set {
+    width: 100%;
+    position: relative;
+}
+
+.zui-tree-entry {
+    position: relative;
+    padding: 3px 0;
+    height: 20px;
+    white-space: nowrap;
+}
+
+.zui-tree-main {
+    cursor: pointer;
+    padding-right: 10px;
+} 
+.zui-tree-main span {
+    line-height: 36px;
+}
+.zui-tree-main span.zui-tree-txt:hover {
+    text-decoration: underline;
+}
+
+.zui-tree-icon {
+    height: 12px;
+    line-height: 12px;
+    width: 12px;
+    text-align: center;
+}
+
+.zui-tree-txt {
+    display: inline-block;
+    vertical-align: middle;
+    color: #555;
+}
+
+.zui-tree-line .zui-tree-pack {
+    padding-left: 27px;
+}
+
+.zui-tree-set {
+    width: 100%;
+    position: relative;
+}
+
+.zui-tree-iconClick {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 10px;
+    color: #c0c4cc;
+}

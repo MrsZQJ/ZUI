@@ -64,12 +64,14 @@
         ss.silderTips = ss.elem.find('div.zui-slider-tips')
         this.addEVent()
     }, Silder.prototype.addEVent = function () {
-        ss.silderWrap.mouseenter(function () {
-            ss.silderTips.show()
-        })
-        ss.silderWrap.mouseleave(function () {
-            ss.silderTips.hide()
-        })
+        if (silder_defult.showNum) {
+            ss.silderWrap.mouseenter(function () {
+                ss.silderTips.show()
+            })
+            ss.silderWrap.mouseleave(function () {
+                ss.silderTips.hide()
+            })
+        }
         if (ss.disable) return
         var silderLeft, silderWidth
         ss.silderWrap.mousedown(function () {
